@@ -1,0 +1,29 @@
+.navigation__bar {
+  border-radius: 1rem !important;
+  box-shadow: 0 0.5rem rgba(0, 0, 0, 0.15) !important;
+  animation: slideIn 1s ease-in;
+}
+
+.navigation__logo {
+  font-size: 2rem !important;
+  text-transform: capitalize;
+}
+
+.navigation__logo__img {
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+.navigation__button {
+  font-size: 1.5rem !important;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
