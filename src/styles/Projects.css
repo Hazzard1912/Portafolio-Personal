@@ -1,0 +1,104 @@
+#projects {
+  margin-top: 6rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.projects__background {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent),
+    url("../../public/conference-table-office-modern-business-center-boardroom-interior.jpg");
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+}
+
+.projects__container {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__box {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.projects__title {
+  margin: 10rem 0;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  background: linear-gradient(to right, #fcfcfd, #e2e3e9);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects__title:hover {
+  transform: scale(1.1) skew(0deg, 5deg);
+  text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.project__card {
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-height: 25rem;
+  transition: transform 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project__card:hover {
+  transform: scale(1.05);
+  max-height: 100rem;
+}
+
+.project__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.project__subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(1, 119, 30);
+  margin-bottom: 1rem;
+}
+
+.project__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  padding: 1rem;
+}
+
+.project__description {
+  font-size: 1.5rem;
+  color: #383737;
+  padding: 1rem;
+  line-height: 1.5;
+  max-width: 300px;
+}

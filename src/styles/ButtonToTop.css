@@ -1,0 +1,45 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+  border-radius: 50%;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.btn_scroll {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 4rem rgba(15, 6, 100, 0.5);
+  background-color: rgb(43, 61, 226);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.btn_scroll:hover {
+  background-color: rgb(90, 105, 238);
+}
